@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Movie Ticket System</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-light d-flex justify-content-center display4 bg-warning"
+    >
+      <marquee behavior="alternate" direction="left" scrollamount="20"
+        ><span class="navbar-brand mb-0 h3">Movie Ticket System</span></marquee
+      >
+    </nav>
+
+    <center>
+      <br />
+      <br />
+      <table
+        class="table-dark table-striped"
+        bordered="2"
+        cellpadding="10"
+        style="color: rgb(255, 255, 255)"
+      >
+        <tr>
+          <td><label>Movie Name</label></td>
+          <td>
+            <input autofocus id="mn" type="text" class="form-control" />
+          </td>
+        </tr>
+        <tr>
+          <td><label>Number of Tickets</label></td>
+          <td><input id="not" type="number" class="form-control" /></td>
+        </tr>
+        <tr>
+          <td><label>Person Name</label></td>
+          <td><input id="pn" type="text" class="form-control" /></td>
+        </tr>
+      </table>
+      <br />
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button onclick="Book()" type="button" class="btn btn-success">
+          <i class="fa fa-folder"></i>
+          Book Now
+        </button>
+        <button
+          onclick="window.location.reload()"
+          type="button"
+          class="btn btn-danger"
+        >
+          <i class="fa fa-trash"></i>
+          Clear
+        </button>
+        <button onclick="show()" type="button" class="btn btn-warning">
+          <i class="fa fa-server"></i>
+          Show Details
+        </button>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <table
+        id="display"
+        class="table-dark text-center table-striped table-bordered"
+        bordered="2"
+        cellpadding="10"
+        style="color: white"
+      >
+        <tr>
+          <th>MOVIE NAME</th>
+          <th>PERSON NAME</th>
+          <th>NUMBER OF TICKETS</th>
+        </tr>
+      </table>
+      <br />
+    </center>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
